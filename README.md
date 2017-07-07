@@ -74,8 +74,10 @@
 
 ## Create MongoDB Database
 
+- install dependencies: `npm install`
+- run mongodb: `mongod`
 - run MongoDB shell: `mongo`
-- create database: `use Strv`
+- create database: `use Strvdb`
 - Make the email field as unique (similar to primary key in Relational database such as MySQL): `db.getCollection('users').createIndex( { "email": 1 }, { unique: true } )`
 
 ## Running the app
