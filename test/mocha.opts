@@ -1,0 +1,2 @@
+--require mocha-steps
+--timeout 5000
