@@ -29,6 +29,10 @@ describe('Authenticate', () => {
         });
 
         step('it should authenticate user', () => {
+            User.remove({email: 'test@gmail.com'}, function(err, user){
+                done();
+            });
+
             let params = {
                 email: "test@gmail.com",
                 password: "abc123",
